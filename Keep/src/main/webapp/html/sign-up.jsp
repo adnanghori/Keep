@@ -29,7 +29,7 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
       <div class="container">
-        <a href="index.html" class="navbar-brand">Keep<span class="text-primary">Notes.</span></a>
+        <a href="index.jsp" class="navbar-brand">Keep<span class="text-primary">Notes.</span></a>
 
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -41,7 +41,7 @@
               <a href="index.jsp" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-              <a href="about.html" class="nav-link">About</a>
+              <a href="about.jsp" class="nav-link">About</a>
             </li>
             <li class="nav-item">
               <a href="services.html" class="nav-link">Services</a>
@@ -50,7 +50,7 @@
               <a href="blog.html" class="nav-link">News</a>
            
             <li>
-              <a href="contact.html" class="nav-link">Contact</a>
+              <a href="contact.jsp" class="nav-link">Contact</a>
           </li>
           </ul>
 
@@ -71,10 +71,10 @@
             <nav aria-label="Breadcrumb">
               <ul class="breadcrumb justify-content-center py-0 bg-transparent">
                 <li class="breadcrumb-item"><a href="index.jsp">Home</a></li>
-                <li class="breadcrumb-item active">Sign-In</li>
+                <li class="breadcrumb-item active">Sign-Up</li>
               </ul>
             </nav>
-            <h1 class="text-center">Sign In</h1>
+            <h1 class="text-center">Sign Up</h1>
           </div>
         </div>
       </div>
@@ -86,10 +86,9 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6 py-3">
-            <h2 class="title-section">Join Us</h2>
+            <h2 class="title-section">Get in Touch</h2>
             <div class="divider"></div>
-            <p>Always within reach
-Keep works on your phone, tablet and computer. Everything you add to Keep syncs across your devices so your important stuff is always with you.</p>
+            <p>Let's Talk Business, Or Just Have Coffee<br>We Would Love To Hear From You.</p>
   
             <ul class="contact-list">
               <li>
@@ -98,30 +97,35 @@ Keep works on your phone, tablet and computer. Everything you add to Keep syncs 
               </li>
               <li>
                 <div class="icon"><span class="mai-mail"></span></div>
-                <div class="content"><a href="">KeepNotes@gmail.com</a></div>
+                <div class="content"><a href="#">KeepNotes@gmail.com</a></div>
               </li>
               <li>
                 <div class="icon"><span class="mai-phone-portrait"></span></div>
                 <div class="content"><a href="#">+00 1122 3344 55</a></div>
               </li>
             </ul>
-            <a href="sign-up.jsp" class="btn btn-primary rounded-pill mt-4">Join Us</a>
+             <a href="sign-in.jsp" class="btn btn-primary rounded-pill mt-4">Sign-In</a>
           </div>
           <div class="col-lg-6 py-3">
-            <div class="subhead">Sign-In</div>
-            <h2 class="title-section">Access Notes	</h2>
+            <div class="subhead">Sign-Up</div>
+            <h2 class="title-section">Write Notes	</h2>
             <div class="divider"></div>
             
-            <form  method ="post" action="../LoginServlet" id= "login-form">
+            <form  method ="post" action="../RegisterServlet" id= "login-form">
+            <div class="py-2">
+                <input type="text" class="form-control" placeholder="Full Name" id="email" name ="fullName" >
+              </div>
               <div class="py-2">
                 <input type="email" class="form-control" placeholder="Email" id="email" name ="email" >
-               
               </div>
               <div class="py-2">
                 <input type="password" class="form-control" placeholder="Password" id = "password" name = "password">
               </div>
+                      <div class="py-2">
+                <input type="password" class="form-control" placeholder="Re-Enter Password" id = "password" name = "repassword">
+              </div>
              
-              <button type="submit" class="btn btn-primary rounded-pill mt-4">Sign-In</button>
+              <button type="submit" class="btn btn-primary rounded-pill mt-4">Sign-Up</button>
             </form>
           </div>
         </div>
@@ -134,7 +138,7 @@ Keep works on your phone, tablet and computer. Everything you add to Keep syncs 
       <div class="row justify-content-center mb-5">
         <div class="col-lg-3 py-3">
           <h3>Keep<span class="text-primary">Notes.</span></h3>
-          <p>Keep every thought.</p>
+          <p>Keep every thought</p>
 
           <p><a href="#" >KeepNotes@gmail.com</a></p>
           <p><a href="#">+00 1122 3344 5566</a></p>
@@ -160,7 +164,7 @@ Keep works on your phone, tablet and computer. Everything you add to Keep syncs 
           </ul>
         </div>
         <div class="col-lg-3 py-3">
-         
+          
 
           <div class="sosmed-button mt-4">
             <a href="#"><span class="mai-logo-facebook-f"></span></a>
@@ -173,8 +177,7 @@ Keep works on your phone, tablet and computer. Everything you add to Keep syncs 
 
       <div class="row">
         <div class="col-sm-6 py-2">
-        <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> &emsp;All Rights Reserved</p>
-          	
+         <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> &emsp;All Rights Reserved</p>
         </div>
         <div class="col-sm-6 py-2 text-right">
           <div class="d-inline-block px-3">

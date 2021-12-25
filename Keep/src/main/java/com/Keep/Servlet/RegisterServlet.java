@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
@@ -15,15 +16,15 @@ import com.Keep.Entities.User;
 import com.Keep.Helper.FactoryProvider;
 
 /**
- * Servlet implementation class LoginServlet
+ * Servlet implementation class RegisterServlet
  */
-public class LoginServlet extends HttpServlet {
+public class RegisterServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public LoginServlet() {
+    public RegisterServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -42,17 +43,25 @@ public class LoginServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		//doGet(request, response);
+		String fullName = request.getParameter("fullName");
 		String email = request.getParameter("email");
 		String password = request.getParameter("password");
-		User user = new User(email,password);
-		System.out.println(email+password);
-		
-		Session session = FactoryProvider.getFactory().openSession();
-		Transaction transaction = session.beginTransaction();
-		session.save(user);
-		transaction.commit();
-		//session.close();
-		//FactoryProvider.closeFactory();
+		String repassword = request.getParameter("repassword");
+		User user = new User(email,password,fullName);
+		if(password.equals(repassword)) {
+			try {
+				Session session = FactoryProvider.getFactory().openSession();
+				Transaction transaction = session.beginTransaction();
+				session.save(user);
+				transaction.commit();
+				//sendRedirect("profile.jsp");
+			}catch(Exception exception) {
+				exception.printStackTrace();
+			}
+		}
+		else {
+			response.getWriter().println("Please Check Password");
+		}
 	}
 
 }
