@@ -44,10 +44,10 @@
               <a href="about.html" class="nav-link">About</a>
             </li>
             <li class="nav-item">
-              <a href="services.html" class="nav-link">AddNote</a>
+              <a href="services.html" class="nav-link">Services</a>
             </li>
             <li class="nav-item">
-              <a href="blog.html" class="nav-link">Show Notes</a>
+              <a href="blog.html" class="nav-link">Blog</a>
             </li>
             <li class="nav-item">
               <a href="contact.html" class="nav-link">Contact</a>
@@ -70,7 +70,7 @@
             <p class="text-lg mb-5">Save your thoughts, wherever you are.<br>Capture what's on your mind <br>Add notes, lists, photos, and audio to Keep.</p>
           
 
-            <a href="#" class="btn btn-outline border text-secondary">More Info</a>
+            <a href="profile.jsp" class="btn btn-outline border text-secondary">More Info</a>
             <a href="#" class="btn btn-primary btn-split ml-2">Watch Video <div class="fab"><span class="mai-play"></span></div></a>
           </div>
           <div class="col-lg-6 py-3 wow zoomIn">
@@ -141,7 +141,7 @@
             <div class="img-place mb-3">
               <img src="../assets/img/testi_image.png" alt="">
             </div>
-            <a href="#" class="btn btn-primary">More Details</a>
+            <a href="profile.jsp" class="btn btn-primary">More Details</a>
             <a href="#" class="btn btn-outline border ml-2">Success Stories</a>
           </div>
         </div>

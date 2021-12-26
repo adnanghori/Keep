@@ -1,8 +1,6 @@
 package com.Keep.Servlet;
 
 import java.io.IOException;
-import java.io.PrintWriter;
-
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -12,20 +10,20 @@ import javax.servlet.http.HttpSession;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
+import com.Keep.Entities.Notes;
 import com.Keep.Entities.User;
 import com.Keep.Helper.FactoryProvider;
-import com.Keep.Helper.Identify;
 
 /**
- * Servlet implementation class LoginServlet
+ * Servlet implementation class NoteServlet
  */
-public class LoginServlet extends HttpServlet {
+public class NoteServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public LoginServlet() {
+    public NoteServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -44,29 +42,15 @@ public class LoginServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		//doGet(request, response);
-		String email = request.getParameter("email");
-		String password = request.getParameter("password");
-		HttpSession httpSession;
-		User user = Identify.checkUserInDb(email, password);
-		if(user==null) {
-			
-			response.getWriter().println("Incorrect Details");
-			//httpSession = request.getSession();
-			
-			//response.sendRedirect("../Keep/html/sign-in.jsp");
-		}
-		else {
-			httpSession = request.getSession();
-			httpSession.setAttribute("current", user);
-			response.sendRedirect("../Keep/html/profile.jsp");
-		}
-		
-		//Session session = FactoryProvider.getFactory().openSession();
-		//Transaction transaction = session.beginTransaction();
-		//session.save(user);
-		//transaction.commit();
-		//session.close();
-		//FactoryProvider.closeFactory();
+		HttpSession httpsession = request.getSession();
+		String title = request.getParameter("NoteTitle");
+		String message = request.getParameter("NoteMessage");
+		 User user= (User)httpsession.getAttribute("current");
+		Notes note = new Notes(title,message,user.getId());
+		Session session = FactoryProvider.getFactory().openSession();
+		Transaction transaction = session.beginTransaction();
+		session.save(note);
+		transaction.commit();
 	}
 
 }

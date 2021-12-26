@@ -44,10 +44,10 @@
               <a href="about.html" class="nav-link">About</a>
             </li>
             <li class="nav-item">
-              <a href="services.html" class="nav-link">AddNote</a>
+              <a href="services.html" class="nav-link">Services</a>
             </li>
             <li class="nav-item">
-              <a href="blog.html" class="nav-link">Show Notes</a>
+              <a href="blog.html" class="nav-link">Blog</a>
             </li>
             <li class="nav-item">
               <a href="contact.html" class="nav-link">Contact</a>
@@ -55,7 +55,7 @@
           </ul>
 
           <div class="ml-auto">
-            <a href="sign-in.jsp" class="btn btn-outline rounded-pill">Get In!</a>
+            <a href="sign-in.jsp" class="btn btn-outline rounded-pill">Log-Out</a>
           </div>
           
         </div>
@@ -69,9 +69,8 @@
             <h1 class="mb-4">Capture notes and access them from your computer, phone or tablet.</h1>
             <p class="text-lg mb-5">Save your thoughts, wherever you are.<br>Capture what's on your mind <br>Add notes, lists, photos, and audio to Keep.</p>
           
-
-            <a href="#" class="btn btn-outline border text-secondary">More Info</a>
-            <a href="#" class="btn btn-primary btn-split ml-2">Watch Video <div class="fab"><span class="mai-play"></span></div></a>
+			
+           
           </div>
           <div class="col-lg-6 py-3 wow zoomIn">
             <div class="img-place">
@@ -84,47 +83,27 @@
   </header>
 
   <main>
-    <div class="page-section features">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-6 col-lg-4 py-3 wow fadeInUp">
-            <div class="d-flex flex-row">
-              <div class="img-fluid mr-3">
-                <img src="../assets/img/icon_pattern.svg" alt="">
+  <!-- .......................................... -->
+  <div align="center">
+  	  <div class="col-lg-6 py-3 wow fadeInUp">
+            <div class="subhead">Add Notes</div>
+            <h2 class="title-section">What's On Your Mind?</h2>
+            <div class="divider"></div>
+            
+            <form action="../NoteServlet"method="post">
+              <div class="py-2">
+                <input type="text" class="form-control" placeholder="Title"name="NoteTitle">
               </div>
-              <div>
-                <h5>Provide financial advice by our advisor</h5>
-                <p>Copywrite, blogpublic realations content translation.</p>
+              <div class="py-2">
+                <textarea rows="6" class="form-control" placeholder="Note"name="NoteMessage"></textarea>
               </div>
-            </div>
+              <button type="submit" class="btn btn-primary rounded-pill mt-4">Send Message</button>
+            </form>
           </div>
-  
-          <div class="col-md-6 col-lg-4 py-3 wow fadeInUp">
-            <div class="d-flex flex-row">
-              <div class="img-fluid mr-3">
-                <img src="../assets/img/icon_pattern.svg" alt="">
-              </div>
-              <div>
-                <h5>Complete solutions for global organisations</h5>
-                <p>Copywrite, blogpublic realations content translation.</p>
-              </div>
-            </div>
-          </div>
-  
-          <div class="col-md-6 col-lg-4 py-3 wow fadeInUp">
-            <div class="d-flex flex-row">
-              <div class="img-fluid mr-3">
-                <img src="../assets/img/icon_pattern.svg" alt="">
-              </div>
-              <div>
-                <h5>Provide financial advice by our advisor</h5>
-                <p>Copywrite, blogpublic realations content translation.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> <!-- .container -->
-    </div> <!-- .page-section -->
+  </div>
+  <!-- .......................................... -->
+     
+    
   
     <div class="page-section">
       <div class="container">
@@ -152,7 +131,7 @@
       <div class="container">
         <div class="row align-items-center text-center">
           <div class="col-lg-4">
-            <p>Total Invest</p>
+            <p>Total Notes</p>
             <h2>$<span class="number" data-number="816278"></span></h2>
           </div>
           <div class="col-lg-4">
@@ -214,128 +193,12 @@
       </div> <!-- .container -->
     </div> <!-- .page-section -->
   
-    <div class="page-section border-top">
-      <div class="container">
-        <div class="text-center wow fadeInUp">
-          <h2 class="title-section">Pricing Plan</h2>
-          <div class="divider mx-auto"></div>
-        </div>
+    
   
-        <div class="row justify-content-center">
-          <div class="col-12 col-lg-auto py-3 wow fadeInLeft">
-            <div class="card-pricing">
-              <div class="header">
-                <div class="price-icon"><span class="mai-people"></span></div>
-                <div class="price-title">Membership</div>
-              </div>
-              <div class="body py-3">
-                <div class="price-tag">
-                  <span class="currency">$</span>
-                  <h2 class="display-4">30</h2>
-                  <span class="period">/monthly</span>
-                </div>
-                <div class="price-info">
-                  <p>Choose the plan that right for you</p>
-                </div>
-              </div>
-              <div class="footer">
-                <a href="#" class="btn btn-outline rounded-pill">Choose Plan</a>
-              </div>
-            </div>
-          </div>
-  
-          <div class="col-12 col-lg-auto py-3 wow fadeInUp">
-            <div class="card-pricing active">
-              <div class="header">
-                <div class="price-labled">Best</div>
-                <div class="price-icon"><span class="mai-business"></span></div>
-                <div class="price-title">Dedicated</div>
-              </div>
-              <div class="body py-3">
-                <div class="price-tag">
-                  <span class="currency">$</span>
-                  <h2 class="display-4">60</h2>
-                  <span class="period">/monthly</span>
-                </div>
-                <div class="price-info">
-                  <p>Choose the plan that right for you</p>
-                </div>
-              </div>
-              <div class="footer">
-                <a href="#" class="btn btn-outline rounded-pill">Choose Plan</a>
-              </div>
-            </div>
-          </div>
-  
-          <div class="col-12 col-lg-auto py-3 wow fadeInRight">
-            <div class="card-pricing">
-              <div class="header">
-                <div class="price-icon"><span class="mai-rocket-outline"></span></div>
-                <div class="price-title">Private</div>
-              </div>
-              <div class="body py-3">
-                <div class="price-tag">
-                  <span class="currency">$</span>
-                  <h2 class="display-4">90</h2>
-                  <span class="period">/monthly</span>
-                </div>
-                <div class="price-info">
-                  <p>Choose the plan that right for you</p>
-                </div>
-              </div>
-              <div class="footer">
-                <a href="#" class="btn btn-outline rounded-pill">Choose Plan</a>
-              </div>
-            </div>
-          </div>
           
-        </div>
-      </div> <!-- .container -->
-    </div> <!-- .page-section -->
+          
+    
   
-    <div class="page-section bg-light">
-      <div class="container">
-        
-        <div class="owl-carousel wow fadeInUp" id="testimonials">
-          <div class="item">
-            <div class="row align-items-center">
-              <div class="col-md-6 py-3">
-                <div class="testi-image">
-                  <img src="../assets/img/person/person_1.jpg" alt="">
-                </div>
-              </div>
-              <div class="col-md-6 py-3">
-                <div class="testi-content">
-                  <p>Necessitatibus ipsum magni accusantium consequatur delectus a repudiandae nemo quisquam dolorum itaque, tenetur, esse optio eveniet beatae explicabo sapiente quo.</p>
-                  <div class="entry-footer">
-                    <strong>Melvin Platje</strong> &mdash; <span class="text-grey">CEO Slurin Group</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <div class="item">
-            <div class="row align-items-center">
-              <div class="col-md-6 py-3">
-                <div class="testi-image">
-                  <img src="../assets/img/person/person_2.jpg" alt="">
-                </div>
-              </div>
-              <div class="col-md-6 py-3">
-                <div class="testi-content">
-                  <p>Repudiandae vero assumenda sequi labore ipsum eos ducimus provident a nam vitae et, dolorum temporibus inventore quaerat consectetur quos! Animi, qui ratione?</p>
-                  <div class="entry-footer">
-                    <strong>George Burke</strong> &mdash; <span class="text-grey">CEO Letro</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-        </div>
-      </div> <!-- .container -->
-    </div> <!-- .page-section -->
   
     <div class="page-section">
       <div class="container">
@@ -343,16 +206,17 @@
           <div class="col-lg-6 py-3 wow fadeInUp">
             <h2 class="title-section">Get in Touch</h2>
             <div class="divider"></div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Laborum ratione autem quidem veritatis!</p>
+            <p>Let's Talk Business, Or Just Have Coffee
+We Would Love To Hear From You.</p>
   
             <ul class="contact-list">
               <li>
                 <div class="icon"><span class="mai-map"></span></div>
-                <div class="content">123 Fake Street, New York, USA</div>
+                <div class="content">123 Fake Street, Indore, India</div>
               </li>
               <li>
                 <div class="icon"><span class="mai-mail"></span></div>
-                <div class="content"><a href="#">info@digigram.com</a></div>
+                <div class="content"><a href="#">KeepNotes@gmail.com</a></div>
               </li>
               <li>
                 <div class="icon"><span class="mai-phone-portrait"></span></div>
@@ -360,151 +224,20 @@
               </li>
             </ul>
           </div>
-          <div class="col-lg-6 py-3 wow fadeInUp">
-            <div class="subhead">Contact Us</div>
-            <h2 class="title-section">Drop Us a Line</h2>
-            <div class="divider"></div>
-            
-            <form action="#">
-              <div class="py-2">
-                <input type="text" class="form-control" placeholder="Full name">
-              </div>
-              <div class="py-2">
-                <input type="text" class="form-control" placeholder="Email">
-              </div>
-              <div class="py-2">
-                <textarea rows="6" class="form-control" placeholder="Enter message"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary rounded-pill mt-4">Send Message</button>
-            </form>
-          </div>
         </div>
       </div> <!-- .container -->
     </div> <!-- .page-section -->
-  
-    <div class="page-section border-top">
-      <div class="container">
-        <div class="text-center wow fadeInUp">
-          <div class="subhead">Our Blog</div>
-          <h2 class="title-section">Read our latest <span class="marked">News</span></h2>
-          <div class="divider mx-auto"></div>
-        </div>
-        <div class="row my-5 card-blog-row">
-          <div class="col-md-6 col-lg-3 py-3 wow fadeInUp">
-            <div class="card-blog">
-              <div class="header">
-                <div class="entry-footer">
-                  <div class="post-author">Sam Newman</div>
-                  <a href="#" class="post-date">23 Apr 2020</a>
-                </div>
-              </div>
-              <div class="body">
-                <div class="post-title"><a href="blog-single.html">What is Business Management?</a></div>
-              </div>
-              <div class="footer">
-                <a href="blog-single.html">Read More <span class="mai-chevron-forward text-sm"></span></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 py-3 wow fadeInUp">
-            <div class="card-blog">
-              <div class="header">
-                <div class="avatar">
-                  <img src="../assets/img/person/person_1.jpg" alt="">
-                </div>
-                <div class="entry-footer">
-                  <div class="post-author">Sam Newman</div>
-                  <a href="#" class="post-date">23 Apr 2020</a>
-                </div>
-              </div>
-              <div class="body">
-                <div class="post-title"><a href="blog-single.html">What is Business Management?</a></div>
-                <div class="post-excerpt">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
-              </div>
-              <div class="footer">
-                <a href="blog-single.html">Read More <span class="mai-chevron-forward text-sm"></span></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 py-3 wow fadeInUp">
-            <div class="card-blog">
-              <div class="header">
-                <div class="avatar">
-                  <img src="../assets/img/person/person_2.jpg" alt="">
-                </div>
-                <div class="entry-footer">
-                  <div class="post-author">Sam Newman</div>
-                  <a href="#" class="post-date">23 Apr 2020</a>
-                </div>
-              </div>
-              <div class="body">
-                <div class="post-title"><a href="blog-single.html">What is Business Management?</a></div>
-                <div class="post-excerpt">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
-              </div>
-              <div class="footer">
-                <a href="blog-single.html">Read More <span class="mai-chevron-forward text-sm"></span></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 py-3 wow fadeInUp">
-            <div class="card-blog">
-              <div class="header">
-                <div class="avatar">
-                  <img src="../assets/img/person/person_3.jpg" alt="">
-                </div>
-                <div class="entry-footer">
-                  <div class="post-author">Sam Newman</div>
-                  <a href="#" class="post-date">23 Apr 2020</a>
-                </div>
-              </div>
-              <div class="body">
-                <div class="post-title"><a href="blog-single.html">What is Business Management?</a></div>
-                <div class="post-excerpt">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
-              </div>
-              <div class="footer">
-                <a href="blog-single.html">Read More <span class="mai-chevron-forward text-sm"></span></a>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-        <div class="text-center">
-          <a href="blog.html" class="btn btn-outline-primary rounded-pill">Discover More</a>
-        </div>
-      </div> <!-- .container -->
-    </div> <!-- .page-section -->
-  
-    <div class="page-section client-section">
-      <div class="container-fluid">
-        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 justify-content-center">
-          <div class="item wow zoomIn">
-            <img src="../assets/img/clients/airbnb.png" alt="">
-          </div>
-          <div class="item wow zoomIn">
-            <img src="../assets/img/clients/google.png" alt="">
-          </div>
-          <div class="item wow zoomIn">
-            <img src="../assets/img/clients/stripe.png" alt="">
-          </div>
-          <div class="item wow zoomIn">
-            <img src="../assets/img/clients/paypal.png" alt="">
-          </div>
-          <div class="item wow zoomIn">
-            <img src="../assets/img/clients/mailchimp.png" alt="">
-          </div>
-        </div>
-      </div> <!-- .container-fluid -->
-    </div> <!-- .page-section -->
+ 
   </main>
 
   <footer class="page-footer">
     <div class="container">
       <div class="row justify-content-center mb-5">
         <div class="col-lg-3 py-3">
-          <h3>Digi<span class="text-primary">Gram.</span></h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          <h3>Keep<span class="text-primary">Notes.</span></h3>
+          <p>Keep every thought.</p>
 
-          <p><a href="#" >digigram@mail.com</a></p>
+          <p><a href="#" >KeepNotes@gmail.com</a></p>
           <p><a href="#">+00 1122 3344 5566</a></p>
         </div>
         <div class="col-lg-3 py-3">
@@ -528,11 +261,7 @@
           </ul>
         </div>
         <div class="col-lg-3 py-3">
-          <h5>Subscribe</h5>
-          <form action="#">
-            <input type="text" class="form-control" placeholder="Enter your mail..">
-          </form>
-
+        
           <div class="sosmed-button mt-4">
             <a href="#"><span class="mai-logo-facebook-f"></span></a>
             <a href="#"><span class="mai-logo-twitter"></span></a>
@@ -544,7 +273,7 @@
 
       <div class="row">
         <div class="col-sm-6 py-2">
-          <p id="copyright">&copy; 2020 <a href="https://macodeid.com/">MACode ID</a>. All rights reserved</p>
+     <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> &emsp;All Rights Reserved</p>
         </div>
         <div class="col-sm-6 py-2 text-right">
           <div class="d-inline-block px-3">
