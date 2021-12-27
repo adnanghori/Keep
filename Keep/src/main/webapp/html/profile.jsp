@@ -13,6 +13,7 @@
     	
     	
     %>
+    
 
 <!DOCTYPE html>
 <html lang="en">
@@ -159,6 +160,7 @@
             	Query query = mysession.createQuery("from Notes where userid=:x");
             	query.setParameter("x",user.getId());
             	List<Notes> notes = query.list();
+            	int numberOfNotes=0;
             	for(Notes note : notes){
             		%>
             		<div class= container>
@@ -178,7 +180,10 @@
 				    </div> 
 				    </div>    
 				          <%  	
+				          numberOfNotes++;
+							
           }
+            	
             	%>
          	<!-- ................................................................... -->
          	
@@ -195,12 +200,13 @@
       <div class="container">
         <div class="row align-items-center text-center">
           <div class="col-lg-4">
+ 
             <p>Total Notes</p>
-            <h2>$<span class="number" data-number="816278"></span></h2>
+            <h2><span class="number" data-number=<%= numberOfNotes %>></span></h2>
           </div>
           <div class="col-lg-4">
             <p>Yearly Revenue</p>
-            <h2>$<span class="number" data-number="216422"></span></h2>
+            <h2><span class="number" data-number="216422"></span></h2>
           </div>
           <div class="col-lg-4">
             <p>Growth Ration</p>

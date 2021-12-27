@@ -1,7 +1,7 @@
 package com.Keep.Entities;
 
 import java.sql.Timestamp;
-import java.util.Random;
+//import java.util.Random;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -30,7 +30,7 @@ public class Notes {
 	
 	public Notes(String noteTitle, String noteMessage, int userid) {
 		super();
-		this.id = new Random().nextInt(1000000);
+		//this.id = new Random().nextInt(1000000);
 		this.noteTitle = noteTitle;
 		this.noteMessage = noteMessage;
 		this.userid = userid;
