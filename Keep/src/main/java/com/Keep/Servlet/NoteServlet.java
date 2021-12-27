@@ -51,6 +51,7 @@ public class NoteServlet extends HttpServlet {
 		Transaction transaction = session.beginTransaction();
 		session.save(note);
 		transaction.commit();
+		response.sendRedirect("../Keep/html/profile.jsp");
 	}
 
 }

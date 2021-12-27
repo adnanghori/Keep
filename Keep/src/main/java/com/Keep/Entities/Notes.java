@@ -7,7 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
+
 
 import org.hibernate.annotations.CreationTimestamp;
 @Entity
@@ -17,7 +17,7 @@ public class Notes {
 	private int id;
 	private String noteTitle;
 	private String noteMessage;
-
+	
 	private int userid;
 	@CreationTimestamp
 	private Timestamp date;

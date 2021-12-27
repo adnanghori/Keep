@@ -1,3 +1,19 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    <%@ page import = "com.Keep.Entities.*" %>
+    <%@ page import = "com.Keep.Helper.*" %>
+    <%@ page import = " org.hibernate.Session" %>
+    <%@ page import = "org.hibernate.Query" %>
+    <%@ page import = "java.util.*" %>
+<%
+    	User user= (User)session.getAttribute("current");
+    	if(user==null){
+    		response.sendRedirect("sign-in.jsp");
+    	}
+    	
+    	
+    %>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +35,12 @@
   <link rel="stylesheet" href="../assets/vendor/owl-carousel/css/owl.carousel.css">
 
   <link rel="stylesheet" href="../assets/css/theme.css">
-
+	<!-- <link rel="stylesheet" href="../assets/css/card.css"> -->
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	
 </head>
 <body>
 
@@ -97,7 +118,7 @@
               <div class="py-2">
                 <textarea rows="6" class="form-control" placeholder="Note"name="NoteMessage"></textarea>
               </div>
-              <button type="submit" class="btn btn-primary rounded-pill mt-4">Send Message</button>
+              <button type="submit" class="btn btn-primary rounded-pill mt-4">Add Note	</button>
             </form>
           </div>
   </div>
@@ -114,17 +135,55 @@
             </div>
           </div>
           <div class="col-lg-6 py-3 wow fadeInRight">
-            <h2 class="title-section">We're <span class="marked">Dynamic</span> Team of Creatives People</h2>
+            <h2 class="title-section"><%= user.getName() %>'s<span class="marked"> Notes</span> </h2>
             <div class="divider"></div>
-            <p>We provide marketing services to startups & small business to looking for partner for their digital media, design & dev lead generation & communication.</p>
-            <div class="img-place mb-3">
-              <img src="../assets/img/testi_image.png" alt="">
-            </div>
-            <a href="#" class="btn btn-primary">More Details</a>
-            <a href="#" class="btn btn-outline border ml-2">Success Stories</a>
+            
+         	<!-- ................................................................... -->
+	<%-- 		         	<div class="cardcontainer">
+			         	
+            	
+            
+			  <div class="content">
+			    <h1><%= note.getNoteTitle() %></h1>
+			    <h3><%= note.getNoteMessage() %></h3>
+			  </div>
+			   
+			  <div class="flap"></div>
+	
+				</div>
+        	<div align="left">
+          <br>
+          <a href="#" class="btn btn-danger">Delete</a>
+          </div> --%>
+          				<% Session mysession = FactoryProvider.getFactory().openSession();
+            	Query query = mysession.createQuery("from Notes where userid=:x");
+            	query.setParameter("x",user.getId());
+            	List<Notes> notes = query.list();
+            	for(Notes note : notes){
+            		%>
+				          <div class="card" style="width: 18rem;">
+				          
+				  <div class="card-body">
+				    <h5 class="card-title"><%= note.getNoteTitle() %></h5>
+				    
+				    <p class="card-text"><%= note.getNoteMessage() %></p>
+				    <a href="#" class="class="btn btn-danger">Delete</a>
+				    
+				  </div>
+				</div>
+				          
+				          <%  	
+          }
+            	%>
+         	<!-- ................................................................... -->
+         	
+        
+           
+            <!-- <a href="#" class="btn btn-outline border ml-2">Success Stories</a> -->
           </div>
         </div>
       </div> <!-- .container -->
+       
     </div> <!-- .page-section -->
   
     <div class="page-section counter-section">
