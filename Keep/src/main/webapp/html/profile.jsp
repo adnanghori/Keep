@@ -161,9 +161,12 @@
             	List<Notes> notes = query.list();
             	for(Notes note : notes){
             		%>
-				          <div class="card" style="width: 18rem;">
+            		<div class= container>
+            		<div class="row mb-2">
+            		<div class="col-md-4">
+				          <div class="card" style="width: 36rem;">
 				          
-				  <div class="card-body">
+				  <div class="card-body" >
 				    <h5 class="card-title"><%= note.getNoteTitle() %></h5>
 				    
 				    <p class="card-text"><%= note.getNoteMessage() %></p>
@@ -171,7 +174,9 @@
 				    
 				  </div>
 				</div>
-				          
+				    </div> 
+				    </div> 
+				    </div>    
 				          <%  	
           }
             	%>
