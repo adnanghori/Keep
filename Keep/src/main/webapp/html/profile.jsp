@@ -5,11 +5,12 @@
     <%@ page import = " org.hibernate.Session" %>
     <%@ page import = "org.hibernate.Query" %>
     <%@ page import = "java.util.*" %>
+    <%@ page  errorPage = "error.jsp" %>
 <%
 		session= request.getSession();
     	User user= (User)session.getAttribute("current");
     	if(user==null){
-    		response.sendRedirect("../Keep/html/sign-in.jsp");	
+    		response.sendRedirect("sign-in.jsp");	
     	}
     	
     	
