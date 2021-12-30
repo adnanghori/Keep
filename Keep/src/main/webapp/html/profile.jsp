@@ -6,6 +6,7 @@
     <%@ page import = "org.hibernate.Query" %>
     <%@ page import = "java.util.*" %>
 <%
+		session= request.getSession();
     	User user= (User)session.getAttribute("current");
     	if(user==null){
     		response.sendRedirect("../Keep/html/sign-in.jsp");	
@@ -78,7 +79,7 @@
           </ul>
 
           <div class="ml-auto">
-            <a href="sign-in.jsp" class="btn btn-outline rounded-pill">Log-Out</a>
+            <a href="../LogoutServlet" class="btn btn-outline rounded-pill">Log-Out</a>
           </div>
           
         </div>
