@@ -1,31 +1,27 @@
 package com.Keep.Servlet;
 
 import java.io.IOException;
-import java.io.PrintWriter;
-
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import com.Keep.Entities.User;
+import com.Keep.Entities.Contact;
 import com.Keep.Helper.FactoryProvider;
-import com.Keep.Helper.Identify;
 
 /**
- * Servlet implementation class LoginServlet
+ * Servlet implementation class ContactServlet
  */
-public class LoginServlet extends HttpServlet {
+public class ContactServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public LoginServlet() {
+    public ContactServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -44,29 +40,20 @@ public class LoginServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		//doGet(request, response);
-		String email = request.getParameter("email");
-		String password = request.getParameter("password");
-		HttpSession httpSession;
-		User user = Identify.checkUserInDb(email, password);
-		if(user==null) {
-			
-			response.getWriter().println("Incorrect Details");
-			//httpSession = request.getSession();
-			
-			//response.sendRedirect("../Keep/html/sign-in.jsp");
-		}
-		else {
-			httpSession = request.getSession();
-			httpSession.setAttribute("current",user);
-			response.sendRedirect("../Keep/html/profile.jsp");
-		}
+		String name = request.getParameter("contact_name");
+		String email = request.getParameter("contact_email");
+		String message = request.getParameter("contact_message");
+		Contact contact = new Contact(name, email, message);
+		try {
+			Session session = FactoryProvider.getFactory().openSession();
+			Transaction transaction = session.beginTransaction();
+			session.save(contact);
+			transaction.commit();
+			response.sendRedirect("../Keep/html/index.jsp");
 		
-		//Session session = FactoryProvider.getFactory().openSession();
-		//Transaction transaction = session.beginTransaction();
-		//session.save(user);
-		//transaction.commit();
-		//session.close();
-		//FactoryProvider.closeFactory();
+		}catch(Exception exception) {
+			exception.printStackTrace();
+		}
 	}
 
 }

@@ -8,8 +8,9 @@
 <%
     	User user= (User)session.getAttribute("current");
     	if(user==null){
-    		response.sendRedirect("sign-in.jsp");
+    		response.sendRedirect("../Keep/html/sign-in.jsp");	
     	}
+    	
     	
     	
     %>
@@ -139,23 +140,7 @@
             <h2 class="title-section"><%= user.getName() %>'s<span class="marked"> Notes</span> </h2>
             <div class="divider"></div>
             
-         	<!-- ................................................................... -->
-	<%-- 		         	<div class="cardcontainer">
-			         	
-            	
-            
-			  <div class="content">
-			    <h1><%= note.getNoteTitle() %></h1>
-			    <h3><%= note.getNoteMessage() %></h3>
-			  </div>
-			   
-			  <div class="flap"></div>
-	
-				</div>
-        	<div align="left">
-          <br>
-          <a href="#" class="btn btn-danger">Delete</a>
-          </div> --%>
+         
           				<% Session mysession = FactoryProvider.getFactory().openSession();
             	Query query = mysession.createQuery("from Notes where userid=:x");
             	query.setParameter("x",user.getId());
@@ -172,7 +157,7 @@
 				    <h5 class="card-title"><%= note.getNoteTitle() %></h5>
 				    
 				    <p class="card-text"><%= note.getNoteMessage() %></p>
-				    <a href="#" class="class="btn btn-danger">Delete</a>
+				    <a href="../DeleteServlet?note_id=<%=note.getId() %>" class="class="btn btn-danger">Delete</a>
 				    
 				  </div>
 				</div>
@@ -185,7 +170,7 @@
           }
             	
             	%>
-         	<!-- ................................................................... -->
+         
          	
         
            
@@ -307,8 +292,8 @@ We Would Love To Hear From You.</p>
           <h3>Keep<span class="text-primary">Notes.</span></h3>
           <p>Keep every thought.</p>
 
-          <p><a href="#" >KeepNotes@gmail.com</a></p>
-          <p><a href="#">+00 1122 3344 5566</a></p>
+          <p><a href="mailto:KeepNotes@gmail.com">KeepNotes@gmail.com</a></p>
+          <p><a href="tel:+00 1122 3344 5566">+00 1122 3344 5566</a></p>
         </div>
         <div class="col-lg-3 py-3">
           <h5>Quick Links</h5>

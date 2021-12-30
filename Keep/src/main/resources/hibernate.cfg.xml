@@ -13,6 +13,6 @@
 		<property name="format_sql">true</property>
 		<mapping class="com.Keep.Entities.User" />
 		<mapping class="com.Keep.Entities.Notes" />
-
+		<mapping class="com.Keep.Entities.Contact" />
 	</session-factory>
 </hibernate-configuration>
