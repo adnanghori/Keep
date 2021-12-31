@@ -6,7 +6,7 @@
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <meta name="copyright" content="MACode ID, https://macodeid.com">
+  
 
   <title>Keep</title>
 
@@ -40,18 +40,7 @@
             <li class="nav-item active">
               <a href="index.html" class="nav-link">Home</a>
             </li>
-            <li class="nav-item">
-              <a href="about.html" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="services.html" class="nav-link">Services</a>
-            </li>
-            <li class="nav-item">
-              <a href="blog.html" class="nav-link">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a href="contact.html" class="nav-link">Contact</a>
-            </li>
+           
           </ul>
 
           <div class="ml-auto">
@@ -298,17 +287,21 @@ We Would Love To Hear From You.</p>
   <footer class="page-footer" >
     <div class="container">
       <div class="row justify-content-center mb-5">
-        <div class="col-lg-3 py-3" >  
+        <div class="col-lg-3 py-3">
           <h3>Keep<span class="text-primary">Notes.</span></h3>
-          <p >Keep every thought.</p>
+          <p>Keep every thought.</p>
 
           <p><a href="mailto:KeepNotes@gmail.com">KeepNotes@gmail.com</a></p>
           <p><a href="tel:+00 1122 3344 5566">+00 1122 3344 5566</a></p>
         </div>
-       
         <div class="col-lg-3 py-3">
          
-
+        </div>
+        <div class="col-lg-3 py-3">
+          
+        </div>
+        <div class="col-lg-3 py-3">
+        
           <div class="sosmed-button mt-4">
             <a href="#"><span class="mai-logo-facebook-f"></span></a>
             <a href="#"><span class="mai-logo-twitter"></span></a>

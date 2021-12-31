@@ -26,8 +26,7 @@
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <meta name="copyright" content="MACode ID, https://macodeid.com">
-
+ 
   <title>Keep</title>
 
   <link rel="stylesheet" href="../assets/vendor/animate/animate.css">
@@ -63,20 +62,9 @@
         <div class="navbar-collapse collapse" id="navbarContent">
           <ul class="navbar-nav ml-lg-4 pt-3 pt-lg-0">
             <li class="nav-item active">
-              <a href="index.html" class="nav-link">Home</a>
+              <a href="index.jsp" class="nav-link">Home</a>
             </li>
-            <li class="nav-item">
-              <a href="about.html" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="services.html" class="nav-link">Services</a>
-            </li>
-            <li class="nav-item">
-              <a href="blog.html" class="nav-link">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a href="contact.html" class="nav-link">Contact</a>
-            </li>
+           
           </ul>
 
           <div class="ml-auto">
@@ -191,14 +179,7 @@
             <p>Total Notes</p>
             <h2><span class="number" data-number=<%= numberOfNotes %>></span></h2>
           </div>
-          <div class="col-lg-4">
-            <p>Yearly Revenue</p>
-            <h2><span class="number" data-number="216422"></span></h2>
-          </div>
-          <div class="col-lg-4">
-            <p>Growth Ration</p>
-            <h2><span class="number" data-number="73"></span>%</h2>
-          </div>
+         
         </div>
       </div> <!-- .container -->
     </div> <!-- .page-section -->
@@ -222,7 +203,7 @@
       </div> <!-- .container -->
     </div> <!-- .page-section -->
   
-    <div class="page-section">
+      <div class="page-section">
       <div class="container">
         <div class="text-center wow fadeInUp">
           <div class="subhead">Why Choose Us</div>
@@ -234,17 +215,17 @@
           <div class="col-lg-4 py-3 wow fadeInUp">
             <div class="display-3"><span class="mai-shapes"></span></div>
             <h5>High Performance</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, sit.</p>
+            <p>Keep allows users to make different kinds of notes, including text, lists, images, and audio.</p>
           </div>
           <div class="col-lg-4 py-3 wow fadeInUp">
             <div class="display-3"><span class="mai-shapes"></span></div>
             <h5>Friendly Prices</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, sit.</p>
+            <p>Keep is a note-taking service included as part of the free, web-based application offered by Keep..</p>
           </div>
           <div class="col-lg-4 py-3 wow fadeInUp">
             <div class="display-3"><span class="mai-shapes"></span></div>
             <h5>No time-confusing</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, sit.</p>
+            <p>Keep itself is accessible though and directly in web browsers.</p>
           </div>
         </div>
       </div> <!-- .container -->
@@ -298,24 +279,10 @@ We Would Love To Hear From You.</p>
           <p><a href="tel:+00 1122 3344 5566">+00 1122 3344 5566</a></p>
         </div>
         <div class="col-lg-3 py-3">
-          <h5>Quick Links</h5>
-          <ul class="footer-menu">
-            <li><a href="#">How it works</a></li>
-            <li><a href="#">Security</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Resources</a></li>
-            <li><a href="#">Report a Bug</a></li>
-          </ul>
+         
         </div>
         <div class="col-lg-3 py-3">
-          <h5>About Us</h5>
-          <ul class="footer-menu">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Jobs</a></li>
-            <li><a href="#">Our Teams</a></li>
-            <li><a href="#">Testimonials</a></li>
-            <li><a href="#">News & Press</a></li>
-          </ul>
+          
         </div>
         <div class="col-lg-3 py-3">
         
@@ -333,9 +300,7 @@ We Would Love To Hear From You.</p>
      <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> &emsp;All Rights Reserved</p>
         </div>
         <div class="col-sm-6 py-2 text-right">
-          <div class="d-inline-block px-3">
-            <a href="#">Privacy</a>
-          </div>
+       
           <div class="d-inline-block px-3">
             <a href="#">Contact Us</a>
           </div>

@@ -40,18 +40,7 @@
             <li class="nav-item">
               <a href="index.jsp" class="nav-link">Home</a>
             </li>
-            <li class="nav-item">
-              <a href="about.jsp" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="services.html" class="nav-link">Services</a>
-            </li>
-            <li class="nav-item">
-              <a href="blog.html" class="nav-link">News</a>
-           
-            <li>
-              <a href="contact.jsp" class="nav-link">Contact</a>
-          </li>
+            
           </ul>
 
           <div class="ml-auto">
@@ -135,37 +124,22 @@
 
   <footer class="page-footer">
     <div class="container">
-      <div class="row justify-content-center mb-5">
+  <div class="row justify-content-center mb-5">
         <div class="col-lg-3 py-3">
           <h3>Keep<span class="text-primary">Notes.</span></h3>
-          <p>Keep every thought</p>
+          <p>Keep every thought.</p>
 
-          <p><a href="#" >KeepNotes@gmail.com</a></p>
-          <p><a href="#">+00 1122 3344 5566</a></p>
+          <p><a href="mailto:KeepNotes@gmail.com">KeepNotes@gmail.com</a></p>
+          <p><a href="tel:+00 1122 3344 5566">+00 1122 3344 5566</a></p>
         </div>
         <div class="col-lg-3 py-3">
-          <h5>Quick Links</h5>
-          <ul class="footer-menu">
-            <li><a href="#">How it works</a></li>
-            <li><a href="#">Security</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Resources</a></li>
-            <li><a href="#">Report a Bug</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-3 py-3">
-          <h5>About Us</h5>
-          <ul class="footer-menu">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Jobs</a></li>
-            <li><a href="#">Our Teams</a></li>
-            <li><a href="#">Testimonials</a></li>
-            <li><a href="#">News & Press</a></li>
-          </ul>
+         
         </div>
         <div class="col-lg-3 py-3">
           
-
+        </div>
+        <div class="col-lg-3 py-3">
+        
           <div class="sosmed-button mt-4">
             <a href="#"><span class="mai-logo-facebook-f"></span></a>
             <a href="#"><span class="mai-logo-twitter"></span></a>
