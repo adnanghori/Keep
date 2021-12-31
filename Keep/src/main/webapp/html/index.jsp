@@ -70,8 +70,8 @@
             <p class="text-lg mb-5">Save your thoughts, wherever you are.<br>Capture what's on your mind <br>Add notes, lists, photos, and audio to Keep.</p>
           
 
-            <a href="profile.jsp" class="btn btn-outline border text-secondary">More Info</a>
-            <a href="#" class="btn btn-primary btn-split ml-2">Watch Video <div class="fab"><span class="mai-play"></span></div></a>
+            <a href="profile.jsp" class="btn btn-primary"> More Info</a>
+            
           </div>
           <div class="col-lg-6 py-3 wow zoomIn">
             <div class="img-place">
@@ -148,24 +148,7 @@
       </div> <!-- .container -->
     </div> <!-- .page-section -->
   
-    <div class="page-section counter-section">
-      <div class="container">
-        <div class="row align-items-center text-center">
-          <div class="col-lg-4">
-            <p>Total Invest</p>
-            <h2>$<span class="number" data-number="816278"></span></h2>
-          </div>
-          <div class="col-lg-4">
-            <p>Yearly Revenue</p>
-            <h2>$<span class="number" data-number="216422"></span></h2>
-          </div>
-          <div class="col-lg-4">
-            <p>Growth Ration</p>
-            <h2><span class="number" data-number="73"></span>%</h2>
-          </div>
-        </div>
-      </div> <!-- .container -->
-    </div> <!-- .page-section -->
+    
   
     <div class="page-section">
       <div class="container">
@@ -173,9 +156,9 @@
           <div class="col-lg-6 py-3 wow fadeInLeft">
             <h2 class="title-section">We're <span class="marked">ready to</span> Serve you with best</h2>
             <div class="divider"></div>
-            <p class="mb-5">We provide marketing services to startups & small business to looking for partner for their digital media, design & dev lead generation & communication.</p>
-            <a href="#" class="btn btn-primary">More Details</a>
-            <a href="#" class="btn btn-outline ml-2">See pricing</a>
+            <p class="mb-5">Keep important info handy your notes sync automatically to all your devices.<br>Bring your notes, tasks, and schedules together to get things done more easily.<br>Get what you need, when you need it with powerful, flexible search capabilities.</p>
+            <a href="sign-in.jsp" class="btn btn-primary">More Details</a>
+            
           </div>
           <div class="col-lg-6 py-3 wow zoomIn">
             <div class="img-place text-center">
@@ -198,100 +181,25 @@
           <div class="col-lg-4 py-3 wow fadeInUp">
             <div class="display-3"><span class="mai-shapes"></span></div>
             <h5>High Performance</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, sit.</p>
+            <p>Keep allows users to make different kinds of notes, including text, lists, images, and audio.</p>
           </div>
           <div class="col-lg-4 py-3 wow fadeInUp">
             <div class="display-3"><span class="mai-shapes"></span></div>
             <h5>Friendly Prices</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, sit.</p>
+            <p>Keep is a note-taking service included as part of the free, web-based application offered by Keep..</p>
           </div>
           <div class="col-lg-4 py-3 wow fadeInUp">
             <div class="display-3"><span class="mai-shapes"></span></div>
             <h5>No time-confusing</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, sit.</p>
+            <p>Keep itself is accessible though and directly in web browsers.</p>
           </div>
         </div>
       </div> <!-- .container -->
     </div> <!-- .page-section -->
   
-    <div class="page-section border-top">
-      <div class="container">
-        <div class="text-center wow fadeInUp">
-          <h2 class="title-section">Pricing Plan</h2>
-          <div class="divider mx-auto"></div>
-        </div>
   
-        <div class="row justify-content-center">
-          <div class="col-12 col-lg-auto py-3 wow fadeInLeft">
-            <div class="card-pricing">
-              <div class="header">
-                <div class="price-icon"><span class="mai-people"></span></div>
-                <div class="price-title">Membership</div>
-              </div>
-              <div class="body py-3">
-                <div class="price-tag">
-                  <span class="currency">$</span>
-                  <h2 class="display-4">30</h2>
-                  <span class="period">/monthly</span>
-                </div>
-                <div class="price-info">
-                  <p>Choose the plan that right for you</p>
-                </div>
-              </div>
-              <div class="footer">
-                <a href="#" class="btn btn-outline rounded-pill">Choose Plan</a>
-              </div>
-            </div>
-          </div>
-  
-          <div class="col-12 col-lg-auto py-3 wow fadeInUp">
-            <div class="card-pricing active">
-              <div class="header">
-                <div class="price-labled">Best</div>
-                <div class="price-icon"><span class="mai-business"></span></div>
-                <div class="price-title">Dedicated</div>
-              </div>
-              <div class="body py-3">
-                <div class="price-tag">
-                  <span class="currency">$</span>
-                  <h2 class="display-4">60</h2>
-                  <span class="period">/monthly</span>
-                </div>
-                <div class="price-info">
-                  <p>Choose the plan that right for you</p>
-                </div>
-              </div>
-              <div class="footer">
-                <a href="#" class="btn btn-outline rounded-pill">Choose Plan</a>
-              </div>
-            </div>
-          </div>
-  
-          <div class="col-12 col-lg-auto py-3 wow fadeInRight">
-            <div class="card-pricing">
-              <div class="header">
-                <div class="price-icon"><span class="mai-rocket-outline"></span></div>
-                <div class="price-title">Private</div>
-              </div>
-              <div class="body py-3">
-                <div class="price-tag">
-                  <span class="currency">$</span>
-                  <h2 class="display-4">90</h2>
-                  <span class="period">/monthly</span>
-                </div>
-                <div class="price-info">
-                  <p>Choose the plan that right for you</p>
-                </div>
-              </div>
-              <div class="footer">
-                <a href="#" class="btn btn-outline rounded-pill">Choose Plan</a>
-              </div>
-            </div>
-          </div>
           
-        </div>
-      </div> <!-- .container -->
-    </div> <!-- .page-section -->
+   
   
     <div class="page-section bg-light">
       <div class="container">
@@ -306,9 +214,9 @@
               </div>
               <div class="col-md-6 py-3">
                 <div class="testi-content">
-                  <p>Necessitatibus ipsum magni accusantium consequatur delectus a repudiandae nemo quisquam dolorum itaque, tenetur, esse optio eveniet beatae explicabo sapiente quo.</p>
+                  <p></p>
                   <div class="entry-footer">
-                    <strong>Melvin Platje</strong> &mdash; <span class="text-grey">CEO Slurin Group</span>
+                    <strong>Adnan Ghori</strong> &mdash; <span class="text-grey">Owner Of Keep </span>
                   </div>
                 </div>
               </div>
@@ -324,9 +232,9 @@
               </div>
               <div class="col-md-6 py-3">
                 <div class="testi-content">
-                  <p>Repudiandae vero assumenda sequi labore ipsum eos ducimus provident a nam vitae et, dolorum temporibus inventore quaerat consectetur quos! Animi, qui ratione?</p>
+                  <p></p>
                   <div class="entry-footer">
-                    <strong>George Burke</strong> &mdash; <span class="text-grey">CEO Letro</span>
+                    <strong>Vedant Thakur</strong> &mdash; <span class="text-grey">Contributor Of Keep</span>
                   </div>
                 </div>
               </div>
@@ -343,20 +251,21 @@
           <div class="col-lg-6 py-3 wow fadeInUp">
             <h2 class="title-section">Get in Touch</h2>
             <div class="divider"></div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Laborum ratione autem quidem veritatis!</p>
+            <p>Let's Talk Business, Or Just Have Coffee
+We Would Love To Hear From You.</p>
   
             <ul class="contact-list">
               <li>
                 <div class="icon"><span class="mai-map"></span></div>
-                <div class="content">123 Fake Street, New York, USA</div>
+                <div class="content">123 Fake Street, Indore, India</div>
               </li>
               <li>
                 <div class="icon"><span class="mai-mail"></span></div>
-                <div class="content"><a href="#">info@digigram.com</a></div>
+                <div class="content"><a href="mailto:KeepNotes@gmail.com">KeepNotes@gmail.com</a></div>
               </li>
               <li>
                 <div class="icon"><span class="mai-phone-portrait"></span></div>
-                <div class="content"><a href="#">+00 1122 3344 55</a></div>
+                <div class="content"><a href="tel:+00 1122 3344 5566">+00 1122 3344 55</a></div>
               </li>
             </ul>
           </div>
@@ -382,119 +291,8 @@
       </div> <!-- .container -->
     </div> <!-- .page-section -->
   
-    <div class="page-section border-top">
-      <div class="container">
-        <div class="text-center wow fadeInUp">
-          <div class="subhead">Our Blog</div>
-          <h2 class="title-section">Read our latest <span class="marked">News</span></h2>
-          <div class="divider mx-auto"></div>
-        </div>
-        <div class="row my-5 card-blog-row">
-          <div class="col-md-6 col-lg-3 py-3 wow fadeInUp">
-            <div class="card-blog">
-              <div class="header">
-                <div class="entry-footer">
-                  <div class="post-author">Sam Newman</div>
-                  <a href="#" class="post-date">23 Apr 2020</a>
-                </div>
-              </div>
-              <div class="body">
-                <div class="post-title"><a href="blog-single.html">What is Business Management?</a></div>
-              </div>
-              <div class="footer">
-                <a href="blog-single.html">Read More <span class="mai-chevron-forward text-sm"></span></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 py-3 wow fadeInUp">
-            <div class="card-blog">
-              <div class="header">
-                <div class="avatar">
-                  <img src="../assets/img/person/person_1.jpg" alt="">
-                </div>
-                <div class="entry-footer">
-                  <div class="post-author">Sam Newman</div>
-                  <a href="#" class="post-date">23 Apr 2020</a>
-                </div>
-              </div>
-              <div class="body">
-                <div class="post-title"><a href="blog-single.html">What is Business Management?</a></div>
-                <div class="post-excerpt">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
-              </div>
-              <div class="footer">
-                <a href="blog-single.html">Read More <span class="mai-chevron-forward text-sm"></span></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 py-3 wow fadeInUp">
-            <div class="card-blog">
-              <div class="header">
-                <div class="avatar">
-                  <img src="../assets/img/person/person_2.jpg" alt="">
-                </div>
-                <div class="entry-footer">
-                  <div class="post-author">Sam Newman</div>
-                  <a href="#" class="post-date">23 Apr 2020</a>
-                </div>
-              </div>
-              <div class="body">
-                <div class="post-title"><a href="blog-single.html">What is Business Management?</a></div>
-                <div class="post-excerpt">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
-              </div>
-              <div class="footer">
-                <a href="blog-single.html">Read More <span class="mai-chevron-forward text-sm"></span></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 py-3 wow fadeInUp">
-            <div class="card-blog">
-              <div class="header">
-                <div class="avatar">
-                  <img src="../assets/img/person/person_3.jpg" alt="">
-                </div>
-                <div class="entry-footer">
-                  <div class="post-author">Sam Newman</div>
-                  <a href="#" class="post-date">23 Apr 2020</a>
-                </div>
-              </div>
-              <div class="body">
-                <div class="post-title"><a href="blog-single.html">What is Business Management?</a></div>
-                <div class="post-excerpt">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
-              </div>
-              <div class="footer">
-                <a href="blog-single.html">Read More <span class="mai-chevron-forward text-sm"></span></a>
-              </div>
-            </div>
-          </div>
-        </div>
   
-        <div class="text-center">
-          <a href="blog.html" class="btn btn-outline-primary rounded-pill">Discover More</a>
-        </div>
-      </div> <!-- .container -->
-    </div> <!-- .page-section -->
   
-    <div class="page-section client-section">
-      <div class="container-fluid">
-        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 justify-content-center">
-          <div class="item wow zoomIn">
-            <img src="../assets/img/clients/airbnb.png" alt="">
-          </div>
-          <div class="item wow zoomIn">
-            <img src="../assets/img/clients/google.png" alt="">
-          </div>
-          <div class="item wow zoomIn">
-            <img src="../assets/img/clients/stripe.png" alt="">
-          </div>
-          <div class="item wow zoomIn">
-            <img src="../assets/img/clients/paypal.png" alt="">
-          </div>
-          <div class="item wow zoomIn">
-            <img src="../assets/img/clients/mailchimp.png" alt="">
-          </div>
-        </div>
-      </div> <!-- .container-fluid -->
-    </div> <!-- .page-section -->
   </main>
 
   <footer class="page-footer" >
