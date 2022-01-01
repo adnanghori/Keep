@@ -41,6 +41,12 @@
   	<description></description>
   	<servlet-class>com.Keep.Servlet.LogoutServlet</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>UpdateNoteServlet</servlet-name>
+  	<display-name>UpdateNoteServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.Keep.Servlet.UpdateNoteServlet</servlet-class>
+  </servlet>
   
   
  
@@ -67,6 +73,10 @@
   <servlet-mapping>
   	<servlet-name>LogoutServlet</servlet-name>
   	<url-pattern>/LogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>UpdateNoteServlet</servlet-name>
+  	<url-pattern>/UpdateNoteServlet</url-pattern>
   </servlet-mapping>
  
   

@@ -151,7 +151,7 @@ Keep works on your phone, tablet and computer. Everything you add to Keep syncs 
         <div class="col-sm-6 py-2 text-right">
          
           <div class="d-inline-block px-3">
-            <a href="contact.jsp">Contact Us</a>
+            <a href="index.jsp#contact">Contact Us</a>
           </div>
         </div>
       </div>

@@ -147,7 +147,46 @@
 				    <h5 class="card-title"><%= note.getNoteTitle() %></h5>
 				    
 				    <p class="card-text"><%= note.getNoteMessage() %></p>
-				    <a href="../DeleteServlet?note_id=<%=note.getId() %>" class="class="btn btn-danger">Delete</a>
+				    <a href="../DeleteServlet?note_id=<%=note.getId() %>" class="btn btn-primary">Delete</a>
+				    <a  class="btn btn-outline ml-2" data-toggle="modal" data-target="#exampleModal?note_id=<%= note.getId()%>">
+ 						Update
+						</a>
+				    <!-- ......................................................... -->
+				    <!-- Button trigger modal -->	
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal?note_id=<%=note.getId() %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Update Note</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      
+        <form action="../UpdateNoteServlet"method="post">
+        <input value="<%=note.getId()%>" name="updateNoteid" type= "hidden"> 
+              <div class="py-2">
+      	          <input type="text" class="form-control" placeholder="Title"name="UpdateNoteTitle" value= "<%= note.getNoteTitle()%>">
+        			      
+                  </div>
+              <div class="py-2">
+                <textarea rows="6" class="form-control" placeholder="Note"name="UpdateNoteMessage"><%= note.getNoteMessage() %></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary rounded-pill mt-4">Update Note</button>
+            </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+				    <!-- .................................................................... -->
 				    
 				  </div>
 				</div>
@@ -302,7 +341,7 @@ We Would Love To Hear From You.</p>
         <div class="col-sm-6 py-2 text-right">
        
           <div class="d-inline-block px-3">
-            <a href="#">Contact Us</a>
+            <a href="index.jsp#contact">Contact Us</a>
           </div>
         </div>
       </div>

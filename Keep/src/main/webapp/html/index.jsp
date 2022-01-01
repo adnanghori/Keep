@@ -258,7 +258,7 @@ We Would Love To Hear From You.</p>
               </li>
             </ul>
           </div>
-          <div class="col-lg-6 py-3 wow fadeInUp">
+          <div class="col-lg-6 py-3 wow fadeInUp" id ="contact">
             <div class="subhead">Contact Us</div>
             <h2 class="title-section">Drop Us a Line</h2>
             <div class="divider"></div>
@@ -317,7 +317,7 @@ We Would Love To Hear From You.</p>
         </div>
         <div class="col-sm-6 py-2 text-right">
           <div class="d-inline-block px-3">
-            <a href="#">Contact Us</a>
+            <a href="#contact">Contact Us</a>
           </div>
         </div>
       </div>
