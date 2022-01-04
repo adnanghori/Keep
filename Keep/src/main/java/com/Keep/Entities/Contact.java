@@ -20,7 +20,7 @@ public class Contact {
 	}
 	public Contact(String name, String email, String message) {
 		super();
-		this.id = new Random().nextInt();
+		this.id = new Random().nextInt(10000);
 		this.name = name;
 		this.email = email;
 		this.message = message;

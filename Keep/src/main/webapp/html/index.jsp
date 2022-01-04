@@ -1,3 +1,4 @@
+   <%@ page  errorPage = "error.jsp" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,7 +30,7 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-light navbar-float">
       <div class="container">
-        <a href="index.jsp" class="navbar-brand">Keep<span class="text-primary">Notes	</span></a>
+        <a href="index.jsp" class="navbar-brand">Keep<span class="text-primary">Notes.	</span></a>
 
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -271,7 +272,7 @@ We Would Love To Hear From You.</p>
                 <input type="text" class="form-control" placeholder="Email"name="contact_email">
               </div>
               <div class="py-2">
-                <textarea rows="6" class="form-control" placeholder="Enter message"name="contact_name"></textarea>
+                <textarea rows="6" class="form-control" placeholder="Enter message"name="contact_message"></textarea>
               </div>
               <button type="submit" class="btn btn-primary rounded-pill mt-4">Send Message</button>
             </form>

@@ -1,7 +1,7 @@
 package com.Keep.Servlet;
 
 import java.io.IOException;
-import java.io.PrintWriter;
+
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -9,11 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import org.hibernate.Session;
-import org.hibernate.Transaction;
-
 import com.Keep.Entities.User;
-import com.Keep.Helper.FactoryProvider;
 import com.Keep.Helper.Identify;
 
 /**
@@ -61,12 +57,7 @@ public class LoginServlet extends HttpServlet {
 			response.sendRedirect("../Keep/html/profile.jsp");
 		}
 		
-		//Session session = FactoryProvider.getFactory().openSession();
-		//Transaction transaction = session.beginTransaction();
-		//session.save(user);
-		//transaction.commit();
-		//session.close();
-		//FactoryProvider.closeFactory();
+	
 	}
 
 }

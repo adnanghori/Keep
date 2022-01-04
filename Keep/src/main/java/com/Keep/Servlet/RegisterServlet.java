@@ -54,7 +54,7 @@ public class RegisterServlet extends HttpServlet {
 				Transaction transaction = session.beginTransaction();
 				session.save(user);
 				transaction.commit();
-				//sendRedirect("profile.jsp");
+				response.sendRedirect("profile.jsp");
 			}catch(Exception exception) {
 				exception.printStackTrace();
 			}
