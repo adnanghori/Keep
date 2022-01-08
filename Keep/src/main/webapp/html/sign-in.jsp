@@ -1,4 +1,16 @@
    <%@ page  errorPage = "error.jsp" %>
+ <%@ page import = "com.Keep.Entities.*" %>
+   <%
+		session= request.getSession();
+    	User user= (User)session.getAttribute("current");
+    	if(user!=null){
+    		response.sendRedirect("profile.jsp");	
+    	}
+    	
+    	
+    	
+    	
+    %>
 <!DOCTYPE html>
 <html lang="en">
 <head>

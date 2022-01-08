@@ -3,6 +3,7 @@ package com.Keep.Entities;
 import java.sql.Timestamp;
 //import java.util.Random;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -16,6 +17,7 @@ public class Notes {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private int id;
 	private String noteTitle;
+	@Column(columnDefinition = "NVARCHAR(MAX)")
 	private String noteMessage;
 	
 	private int userid;

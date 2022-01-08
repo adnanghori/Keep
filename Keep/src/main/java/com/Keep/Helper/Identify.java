@@ -2,7 +2,7 @@ package com.Keep.Helper;
 
 
 
-import org.hibernate.Query;
+import org.hibernate.query.*;
 import org.hibernate.Session;
 
 import com.Keep.Entities.User;

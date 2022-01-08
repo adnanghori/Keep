@@ -3,7 +3,7 @@
     <%@ page import = "com.Keep.Entities.*" %>
     <%@ page import = "com.Keep.Helper.*" %>
     <%@ page import = " org.hibernate.Session" %>
-    <%@ page import = "org.hibernate.Query" %>
+    <%@ page import = "org.hibernate.query.*" %>
     <%@ page import = "java.util.*" %>
     <%@ page  errorPage = "error.jsp" %>
 <%
@@ -38,6 +38,7 @@
   <link rel="stylesheet" href="../assets/vendor/owl-carousel/css/owl.carousel.css">
 
   <link rel="stylesheet" href="../assets/css/theme.css">
+  <link rel="stylesheet" href="../assets/css/modal.css"> 
 	<!-- <link rel="stylesheet" href="../assets/css/card.css"> -->
 	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -66,13 +67,66 @@
             </li>
            
           </ul>
-
-          <div class="ml-auto">
+	
+         <!--  <div class="ml-auto">
+         
+            <a href="../LogoutServlet" class="btn btn-outline rounded-pill">Log-Out</a>
+          </div> -->
+           <!-- .............................................................. -->
+	 	<div class="ml-auto">
+	 		<div class="usermodal" align="right">
+  <div class="email" onclick="this.classList.add('expand')">
+    <div class="from">
+      <div class="from-contents">
+        <div class="avatar me" style="background-image: url(../assets/img/user.png); background-size: cover;"></div>
+        <div class="name"style="font-family:Monaco;font-weight:bold;"><%= user.getName() %></div>
+      </div>
+    </div>
+    <div class="to">
+      <div class="to-contents">
+        <div class="modaltop">
+          <div class="avatar-large me"></div>
+           <div class="avatar me" style="background-image: url(../assets/img/user.png); background-size:cover;"></div>
+          <div class="name-large"style="font-family:Monaco;font-weight:bold;"><%= user.getName()	 %></div>
+          <div class="x-touch" onclick="document.querySelector('.email').classList.remove('expand');event.stopPropagation();">
+            <div class="x">
+              <div class="line1"></div>
+              <div class="line2"></div>
+            </div>
+          </div>
+        </div>
+        <div class="modalbottom">
+          <div class="modalrow">
+           <div class="link"style="font-family:Monaco;font-weight:bold;">ID:&emsp; <%= user.getId() %></div>
+            
+        </div>
+         <div class="modalrow">
+             
+              <div class="link"style="font-family:Monaco;font-weight:bold;">Email:&emsp; <%= user.getEmail()%></div>
+              
+            </div>
+               <div class="modalrow">
+             
+              <div class="ml-auto">
+         
             <a href="../LogoutServlet" class="btn btn-outline rounded-pill">Log-Out</a>
           </div>
-          
-        </div>
+              
+            </div>
+       
       </div>
+    </div>
+  </div>
+</div>
+	 		
+	 
+	 
+	 
+	 
+	 <!-- .................................................................... -->
+        </div>
+        </div>
+    </div>
     </nav>
 
     <div class="page-banner home-banner">
@@ -96,28 +150,7 @@
   </header>
 
   <main>
-  <!-- .......................................... -->
-  <div align="center">
-  	  <div class="col-lg-6 py-3 wow fadeInUp">
-            <div class="subhead">Add Notes</div>
-            <h2 class="title-section">What's On Your Mind?</h2>
-            <div class="divider"></div>
-            
-            <form action="../NoteServlet"method="post">
-              <div class="py-2">
-                <input type="text" class="form-control" placeholder="Title"name="NoteTitle">
-              </div>
-              <div class="py-2">
-                <textarea rows="6" class="form-control" placeholder="Note"name="NoteMessage"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary rounded-pill mt-4">Add Note	</button>
-            </form>
-          </div>
-  </div>
-  <!-- .......................................... -->
-     
-    
-  
+
     <div class="page-section">
       <div class="container">
         <div class="row">
